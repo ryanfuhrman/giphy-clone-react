@@ -1,4 +1,5 @@
 import React from "react";
+import SearchStyles from "./styles/SearchStyles.css";
 
 function Search() {
   return (
@@ -10,7 +11,7 @@ function Search() {
         className="search-bar-input"
         placeholder="Search All GIFs and Stickers"
       />
-      <button className="search-icon">
+      <button className="search-button">
         <svg
           className="search-icon"
           version="1.1"

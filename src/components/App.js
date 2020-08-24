@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import Search from "./Search";
 import Gallery from "./Gallery";
-import "./App.css";
+import "./styles/App.css";
 
 function App() {
   return (
