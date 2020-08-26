@@ -1,12 +1,11 @@
 import React from "react";
-import Gifs from "./Gifs";
 import Categories from "./Categories";
+import Trending from "./Trending";
 
 function Gallery() {
   return (
     <section className="gifs">
-      <h1 className="section-title gifs-title">Trending GIFS</h1>
-      <Gifs />
+      <Trending />
       <Categories />
     </section>
   );
