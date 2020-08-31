@@ -1,12 +1,14 @@
 import React from "react";
-import Categories from "./Categories";
-import Trending from "./Trending";
+// import Categories from "./Categories";
+// import Trending from "./Trending";
+import SearchResults from "./SearchResults";
 
-function Gallery() {
+function Gallery({ searchTerm }) {
   return (
     <section className="gifs">
-      <Trending />
-      <Categories />
+      <SearchResults searchTerm={searchTerm} />
+      {/* <Trending />
+      <Categories /> */}
     </section>
   );
 }

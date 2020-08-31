@@ -1,11 +1,19 @@
 import React from "react";
 import "./styles/SearchStyles.css";
 
-function Search() {
-  function handleClick() {
-    const searchText = document.querySelector(".search-bar-input").value;
+function Search({ getSearchTerm }) {
+  function handleEnter(e) {
+    if (e.keyCode === 13) {
+      handleClick();
+    }
+  }
 
-    console.log(searchText);
+  function handleClick() {
+    const searchText = document.querySelector(".search-bar-input");
+
+    getSearchTerm(searchText.value);
+
+    searchText.value = "";
   }
 
   return (
@@ -16,6 +24,7 @@ function Search() {
         id="search-bar-input"
         className="search-bar-input"
         placeholder="Search All GIFs and Stickers"
+        onKeyUp={handleEnter}
       />
       <button className="search-button" onClick={handleClick}>
         <svg
