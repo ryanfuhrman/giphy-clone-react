@@ -24,7 +24,9 @@ const SearchResults = ({ searchTerm }) => {
 
   return (
     <div className="gifs">
-      <h1 className="section-title gifs-title">Trending GIFS</h1>
+      {gifs && (
+        <h1 className="section-title gifs-title">Results for {searchTerm}</h1>
+      )}
       <ul className="gifs-list">
         {gifs &&
           gifs.data.map((gif) => (
