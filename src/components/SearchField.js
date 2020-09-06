@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/SearchStyles.css";
+import "./styles/SearchFieldStyles.css";
 
 function Search({ getSearchTerm }) {
   function handleEnter(e) {

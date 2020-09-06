@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Categories from "./Categories";
 import Trending from "./Trending";
 import SearchResults from "./SearchResults";
@@ -16,29 +11,29 @@ function NavBar() {
     <Router>
       <nav className="nav-bar">
         <h1 className="nav-bar-logo">
-          <NavLink to="/">RIPHY</NavLink>
+          <Link to="/">RIPHY</Link>
         </h1>
         <ul className="nav-categories-ul">
           <li className="tredning-button nav-categories-li">
-            <NavLink to="/trending">Trending</NavLink>
+            <Link to="/trending">Trending</Link>
           </li>
           <li className="entertainment-button nav-categories-li">
-            <NavLink to="/entertainment">Entertainment</NavLink>
+            <Link to="/entertainment">Entertainment</Link>
           </li>
           <li className="sports-button nav-categories-li">
-            <NavLink to="/sports">Sports</NavLink>
+            <Link to="/sports">Sports</Link>
           </li>
           <li className="animals-button nav-categories-li">
-            <NavLink to="/animals">Animals</NavLink>
+            <Link to="/animals">Animals</Link>
           </li>
           <li className="categories-button nav-categories-li">
-            <NavLink to="/categories">Categories</NavLink>
+            <Link to="/categories">Categories</Link>
           </li>
           <li className="categories-button nav-categories-li">
-            <NavLink to="/search">Search</NavLink>
+            <Link to="/search">Search</Link>
           </li>
         </ul>
-        <button>
+        <button className="nav-website-button">
           <a href="https://www.ryanfuhrman.me">Built by: Ryan Fuhrman</a>
         </button>
       </nav>
