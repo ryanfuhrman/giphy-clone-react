@@ -1,0 +1,44 @@
+.categories {
+  width: 1040px;
+}
+
+.categories-title {
+  align-self: flex-start;
+  margin: 10px 0;
+  font-size: 26px;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.categories-li {
+  width: 255px;
+  height: 136px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.category-title {
+  position: absolute;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-image {
+  width: 100%;
+}
