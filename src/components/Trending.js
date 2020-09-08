@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import "./styles/TrendingStyles.css";
 
 const Trending = () => {
   const [gifs, setGifs] = useState({ data: [] });
 
   useEffect(() => {
     const key = process.env.REACT_APP_API_KEY;
-    const url = `http://api.giphy.com/v1/gifs/trending?api_key=${key}&limit=10`;
+    const url = `http://api.giphy.com/v1/gifs/trending?api_key=${key}&limit=25`;
 
     const fetchData = async () => {
       await fetch(url)
@@ -24,7 +25,11 @@ const Trending = () => {
       <ul className="gifs-list">
         {gifs.data.map((gif) => (
           <li className="gifs-li" id={gif.id} key={gif.id}>
-            <img src={gif.images.original_still.url} alt={gif.title} />
+            <img
+              className="gifs-img"
+              src={gif.images.original_still.url}
+              alt={gif.title}
+            />
           </li>
         ))}
       </ul>

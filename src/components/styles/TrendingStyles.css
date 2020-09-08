@@ -1,0 +1,33 @@
+.trending-gifs {
+  width: 1040px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gifs-title {
+  align-self: flex-start;
+  margin: 10px 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.gifs-list {
+  width: 100%;
+  line-height: 0;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  column-gap: 5px;
+}
+
+.gifs-li {
+  margin-bottom: 5px;
+  height: auto;
+  width: auto;
+}
+
+.gifs-img {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
